@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77687DD225D9AC6600A1D2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77687DD125D9AC6600A1D2B2 /* AppDelegate.swift */; };
+		77687DD425D9AC6600A1D2B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77687DD325D9AC6600A1D2B2 /* SceneDelegate.swift */; };
+		77687DD625D9AC6600A1D2B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77687DD525D9AC6600A1D2B2 /* MainViewController.swift */; };
+		77687DDB25D9AC6700A1D2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77687DDA25D9AC6700A1D2B2 /* Assets.xcassets */; };
+		77687DE925D9AC6700A1D2B2 /* MarsPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77687DE825D9AC6700A1D2B2 /* MarsPhotoTests.swift */; };
+		77687DF425D9AC6700A1D2B2 /* MarsPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77687DF325D9AC6700A1D2B2 /* MarsPhotoUITests.swift */; };
+		7770906925E13FD0002DEE66 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770906825E13FD0002DEE66 /* PhotoViewCell.swift */; };
+		7770906F25E15FF9002DEE66 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7770906E25E15FF9002DEE66 /* WebKit.framework */; };
+		7784E6D725DAD8A1008DB308 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7784E6D625DAD8A1008DB308 /* NetworkService.swift */; };
+		779DA35925DED30900147A85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DA35825DED30900147A85 /* DetailViewController.swift */; };
+		779DA37F25DF305300147A85 /* ResponseWithManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DA37E25DF305300147A85 /* ResponseWithManifest.swift */; };
+		779DA38425DF306B00147A85 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DA38325DF306B00147A85 /* Manifest.swift */; };
+		779DA38925DF308900147A85 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DA38825DF308900147A85 /* Day.swift */; };
+		779DA38E25DF309C00147A85 /* ResponseWithPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DA38D25DF309C00147A85 /* ResponseWithPhotos.swift */; };
+		779DA39325DF30B500147A85 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DA39225DF30B500147A85 /* Photo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77687DE525D9AC6700A1D2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77687DC625D9AC6500A1D2B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77687DCD25D9AC6500A1D2B2;
+			remoteInfo = MarsPhoto;
+		};
+		77687DF025D9AC6700A1D2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77687DC625D9AC6500A1D2B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77687DCD25D9AC6500A1D2B2;
+			remoteInfo = MarsPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77687DCE25D9AC6600A1D2B2 /* MarsPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77687DD125D9AC6600A1D2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77687DD325D9AC6600A1D2B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		77687DD525D9AC6600A1D2B2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		77687DDA25D9AC6700A1D2B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77687DDF25D9AC6700A1D2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77687DE425D9AC6700A1D2B2 /* MarsPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77687DE825D9AC6700A1D2B2 /* MarsPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoTests.swift; sourceTree = "<group>"; };
+		77687DEA25D9AC6700A1D2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77687DEF25D9AC6700A1D2B2 /* MarsPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77687DF325D9AC6700A1D2B2 /* MarsPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoUITests.swift; sourceTree = "<group>"; };
+		77687DF525D9AC6700A1D2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7770906825E13FD0002DEE66 /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		7770906E25E15FF9002DEE66 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7784E6D625DAD8A1008DB308 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		779DA35825DED30900147A85 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		779DA37E25DF305300147A85 /* ResponseWithManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseWithManifest.swift; sourceTree = "<group>"; };
+		779DA38325DF306B00147A85 /* Manifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manifest.swift; sourceTree = "<group>"; };
+		779DA38825DF308900147A85 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		779DA38D25DF309C00147A85 /* ResponseWithPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseWithPhotos.swift; sourceTree = "<group>"; };
+		779DA39225DF30B500147A85 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77687DCB25D9AC6500A1D2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7770906F25E15FF9002DEE66 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77687DE125D9AC6700A1D2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77687DEC25D9AC6700A1D2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77687DC525D9AC6500A1D2B2 = {
+			isa = PBXGroup;
+			children = (
+				77687DD025D9AC6600A1D2B2 /* MarsPhoto */,
+				77687DE725D9AC6700A1D2B2 /* MarsPhotoTests */,
+				77687DF225D9AC6700A1D2B2 /* MarsPhotoUITests */,
+				77687DCF25D9AC6600A1D2B2 /* Products */,
+				7770906D25E15FF9002DEE66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77687DCF25D9AC6600A1D2B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77687DCE25D9AC6600A1D2B2 /* MarsPhoto.app */,
+				77687DE425D9AC6700A1D2B2 /* MarsPhotoTests.xctest */,
+				77687DEF25D9AC6700A1D2B2 /* MarsPhotoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77687DD025D9AC6600A1D2B2 /* MarsPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				779DA37825DF2FA900147A85 /* App */,
+				779DA39A25DF30DC00147A85 /* DataService */,
+				779DA37925DF2FEC00147A85 /* Model */,
+				779DA37A25DF2FFF00147A85 /* ViewController */,
+			);
+			path = MarsPhoto;
+			sourceTree = "<group>";
+		};
+		77687DE725D9AC6700A1D2B2 /* MarsPhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				77687DE825D9AC6700A1D2B2 /* MarsPhotoTests.swift */,
+				77687DEA25D9AC6700A1D2B2 /* Info.plist */,
+			);
+			path = MarsPhotoTests;
+			sourceTree = "<group>";
+		};
+		77687DF225D9AC6700A1D2B2 /* MarsPhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77687DF325D9AC6700A1D2B2 /* MarsPhotoUITests.swift */,
+				77687DF525D9AC6700A1D2B2 /* Info.plist */,
+			);
+			path = MarsPhotoUITests;
+			sourceTree = "<group>";
+		};
+		7770906D25E15FF9002DEE66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7770906E25E15FF9002DEE66 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		779DA37825DF2FA900147A85 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				77687DDF25D9AC6700A1D2B2 /* Info.plist */,
+				77687DD125D9AC6600A1D2B2 /* AppDelegate.swift */,
+				77687DD325D9AC6600A1D2B2 /* SceneDelegate.swift */,
+				77687DDA25D9AC6700A1D2B2 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		779DA37925DF2FEC00147A85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				779DA37E25DF305300147A85 /* ResponseWithManifest.swift */,
+				779DA38325DF306B00147A85 /* Manifest.swift */,
+				779DA38825DF308900147A85 /* Day.swift */,
+				779DA38D25DF309C00147A85 /* ResponseWithPhotos.swift */,
+				779DA39225DF30B500147A85 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		779DA37A25DF2FFF00147A85 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77687DD525D9AC6600A1D2B2 /* MainViewController.swift */,
+				779DA35825DED30900147A85 /* DetailViewController.swift */,
+				7770906825E13FD0002DEE66 /* PhotoViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		779DA39A25DF30DC00147A85 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				7784E6D625DAD8A1008DB308 /* NetworkService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77687DCD25D9AC6500A1D2B2 /* MarsPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77687DF825D9AC6700A1D2B2 /* Build configuration list for PBXNativeTarget "MarsPhoto" */;
+			buildPhases = (
+				77687DCA25D9AC6500A1D2B2 /* Sources */,
+				77687DCB25D9AC6500A1D2B2 /* Frameworks */,
+				77687DCC25D9AC6500A1D2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarsPhoto;
+			productName = MarsPhoto;
+			productReference = 77687DCE25D9AC6600A1D2B2 /* MarsPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77687DE325D9AC6700A1D2B2 /* MarsPhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77687DFB25D9AC6700A1D2B2 /* Build configuration list for PBXNativeTarget "MarsPhotoTests" */;
+			buildPhases = (
+				77687DE025D9AC6700A1D2B2 /* Sources */,
+				77687DE125D9AC6700A1D2B2 /* Frameworks */,
+				77687DE225D9AC6700A1D2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77687DE625D9AC6700A1D2B2 /* PBXTargetDependency */,
+			);
+			name = MarsPhotoTests;
+			productName = MarsPhotoTests;
+			productReference = 77687DE425D9AC6700A1D2B2 /* MarsPhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77687DEE25D9AC6700A1D2B2 /* MarsPhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77687DFE25D9AC6700A1D2B2 /* Build configuration list for PBXNativeTarget "MarsPhotoUITests" */;
+			buildPhases = (
+				77687DEB25D9AC6700A1D2B2 /* Sources */,
+				77687DEC25D9AC6700A1D2B2 /* Frameworks */,
+				77687DED25D9AC6700A1D2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77687DF125D9AC6700A1D2B2 /* PBXTargetDependency */,
+			);
+			name = MarsPhotoUITests;
+			productName = MarsPhotoUITests;
+			productReference = 77687DEF25D9AC6700A1D2B2 /* MarsPhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77687DC625D9AC6500A1D2B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					77687DCD25D9AC6500A1D2B2 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					77687DE325D9AC6700A1D2B2 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 77687DCD25D9AC6500A1D2B2;
+					};
+					77687DEE25D9AC6700A1D2B2 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 77687DCD25D9AC6500A1D2B2;
+					};
+				};
+			};
+			buildConfigurationList = 77687DC925D9AC6500A1D2B2 /* Build configuration list for PBXProject "MarsPhoto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77687DC525D9AC6500A1D2B2;
+			productRefGroup = 77687DCF25D9AC6600A1D2B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77687DCD25D9AC6500A1D2B2 /* MarsPhoto */,
+				77687DE325D9AC6700A1D2B2 /* MarsPhotoTests */,
+				77687DEE25D9AC6700A1D2B2 /* MarsPhotoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77687DCC25D9AC6500A1D2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77687DDB25D9AC6700A1D2B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77687DE225D9AC6700A1D2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77687DED25D9AC6700A1D2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77687DCA25D9AC6500A1D2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779DA39325DF30B500147A85 /* Photo.swift in Sources */,
+				77687DD625D9AC6600A1D2B2 /* MainViewController.swift in Sources */,
+				779DA38E25DF309C00147A85 /* ResponseWithPhotos.swift in Sources */,
+				77687DD225D9AC6600A1D2B2 /* AppDelegate.swift in Sources */,
+				7770906925E13FD0002DEE66 /* PhotoViewCell.swift in Sources */,
+				7784E6D725DAD8A1008DB308 /* NetworkService.swift in Sources */,
+				779DA38425DF306B00147A85 /* Manifest.swift in Sources */,
+				77687DD425D9AC6600A1D2B2 /* SceneDelegate.swift in Sources */,
+				779DA35925DED30900147A85 /* DetailViewController.swift in Sources */,
+				779DA38925DF308900147A85 /* Day.swift in Sources */,
+				779DA37F25DF305300147A85 /* ResponseWithManifest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77687DE025D9AC6700A1D2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77687DE925D9AC6700A1D2B2 /* MarsPhotoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77687DEB25D9AC6700A1D2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77687DF425D9AC6700A1D2B2 /* MarsPhotoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77687DE625D9AC6700A1D2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77687DCD25D9AC6500A1D2B2 /* MarsPhoto */;
+			targetProxy = 77687DE525D9AC6700A1D2B2 /* PBXContainerItemProxy */;
+		};
+		77687DF125D9AC6700A1D2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77687DCD25D9AC6500A1D2B2 /* MarsPhoto */;
+			targetProxy = 77687DF025D9AC6700A1D2B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		77687DF625D9AC6700A1D2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77687DF725D9AC6700A1D2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77687DF925D9AC6700A1D2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64CPZNZNR7;
+				INFOPLIST_FILE = MarsPhoto/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Macnolia.MarsPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77687DFA25D9AC6700A1D2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64CPZNZNR7;
+				INFOPLIST_FILE = MarsPhoto/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Macnolia.MarsPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77687DFC25D9AC6700A1D2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64CPZNZNR7;
+				INFOPLIST_FILE = MarsPhotoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Macnolia.MarsPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsPhoto.app/MarsPhoto";
+			};
+			name = Debug;
+		};
+		77687DFD25D9AC6700A1D2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64CPZNZNR7;
+				INFOPLIST_FILE = MarsPhotoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Macnolia.MarsPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsPhoto.app/MarsPhoto";
+			};
+			name = Release;
+		};
+		77687DFF25D9AC6700A1D2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64CPZNZNR7;
+				INFOPLIST_FILE = MarsPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Macnolia.MarsPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarsPhoto;
+			};
+			name = Debug;
+		};
+		77687E0025D9AC6700A1D2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64CPZNZNR7;
+				INFOPLIST_FILE = MarsPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Macnolia.MarsPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarsPhoto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77687DC925D9AC6500A1D2B2 /* Build configuration list for PBXProject "MarsPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77687DF625D9AC6700A1D2B2 /* Debug */,
+				77687DF725D9AC6700A1D2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77687DF825D9AC6700A1D2B2 /* Build configuration list for PBXNativeTarget "MarsPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77687DF925D9AC6700A1D2B2 /* Debug */,
+				77687DFA25D9AC6700A1D2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77687DFB25D9AC6700A1D2B2 /* Build configuration list for PBXNativeTarget "MarsPhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77687DFC25D9AC6700A1D2B2 /* Debug */,
+				77687DFD25D9AC6700A1D2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77687DFE25D9AC6700A1D2B2 /* Build configuration list for PBXNativeTarget "MarsPhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77687DFF25D9AC6700A1D2B2 /* Debug */,
+				77687E0025D9AC6700A1D2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77687DC625D9AC6500A1D2B2 /* Project object */;
+}
