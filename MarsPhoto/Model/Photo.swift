@@ -22,10 +22,6 @@ struct Photo: Decodable {
         }
     }
     
-    init(link: String) {
-        self.link = link
-    }
-    
     private enum CodingKeys: String, CodingKey {
         case link = "img_src"
     }

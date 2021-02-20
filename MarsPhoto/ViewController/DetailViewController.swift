@@ -8,44 +8,33 @@
 import UIKit
 import WebKit
 
-class DetailViewController: UIViewController, UIWebViewDelegate, WKNavigationDelegate {
+class DetailViewController: UIViewController {
     
-    var link: String! // optional???
-    
-    var webView: WKWebView!
-    
+    /**
+     Link of photo that should be opened
+     */
+    var link: String!
+        
     override func viewDidLoad() {
-            super.viewDidLoad()
-        view.backgroundColor = .black
+        super.viewDidLoad()
         
-        
+        // Create web view for viewing of photo
+        let webView = WKWebView(frame: CGRect.zero)
 
-            let myWebView: WKWebView = WKWebView(frame: CGRect(x: 0, y: 20, width: self.view.frame.width, height: self.view.frame.height))
-        myWebView.isOpaque = false
-        myWebView.backgroundColor = .black
-        self.view.addSubview(myWebView)
-        myWebView.navigationDelegate = self
-
-//        myWebView.loadHTMLString("<html><body><p>Hello!</p></body></html>", baseURL: nil)
+        webView.isOpaque = false
+        webView.backgroundColor = .black
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(webView)
         
-        myWebView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            myWebView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            myWebView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            myWebView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            myWebView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+            webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            webView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            webView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            webView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
         ])
         
-            
-            
-            let url = URL (string: link);
-            let request = URLRequest(url: url! as URL);
-        myWebView.load(request);
-//        myWebView.loadHTMLString(link, baseURL: nil)
-        webView = myWebView
-       
-
-        }
-
-
+        guard let url = URL(string: link) else { return }
+        let request = URLRequest(url: url as URL)
+        webView.load(request)
+    }
 }

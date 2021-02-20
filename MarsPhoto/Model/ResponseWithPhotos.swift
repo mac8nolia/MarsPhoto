@@ -5,8 +5,6 @@
 //  Created by Ольга on 19.02.2021.
 //
 
-import Foundation
-
 struct ResponseWithPhotos: Decodable {
     
     let photos: [Photo]
