@@ -37,7 +37,14 @@ class NetworkService {
         
         // Query for rover's manifest, which contains info about all worked days
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data else { return }
+            guard let response = response as? HTTPURLResponse,
+                  (200...299).contains(response.statusCode),
+                  let data = data, error == nil
+            else {
+                completion(photos)
+                return
+            }
+            
             do {
                 let response = try JSONDecoder().decode(ResponseWithManifest.self, from: data)
                 let days = response.manifest.days
@@ -51,7 +58,9 @@ class NetworkService {
                     let randomDay = days[randomInt]
                     group.enter()
                     self.getRandomPhotoOf(day: randomDay) { (photo) in
-                        photos.append(photo)
+                        if let photo = photo {
+                            photos.append(photo)
+                        }
                         group.leave()
                     }
                 }
@@ -67,14 +76,21 @@ class NetworkService {
     /**
      Returns a random photo of the given day
      */
-    func getRandomPhotoOf(day: Day, completion: @escaping (Photo) -> ()) {
+    func getRandomPhotoOf(day: Day, completion: @escaping (Photo?) -> ()) {
         
         let urlString = queryForPhotos + String(day.dayNumber) + "&api_key=" + token
         guard let url = URL(string: urlString) else { return }
         
         // Query for all photos of the day
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data else { return }
+            guard let response = response as? HTTPURLResponse,
+                  (200...299).contains(response.statusCode),
+                  let data = data, error == nil
+            else {
+                completion(nil)
+                return
+            }
+            
             do {
                 let response = try JSONDecoder().decode(ResponseWithPhotos.self, from: data)
                 
@@ -96,17 +112,17 @@ class NetworkService {
     /**
      Returns image for given link
      */
-    func getImageWith(link: String, completion: @escaping (UIImage) -> ()) {
+    func getImageWith(link: String, completion: @escaping (UIImage?) -> ()) {
         
         guard let url = URL(string: link) else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+            if let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode),
                 let data = data, error == nil,
-                let image = UIImage(data: data)
-                else { return }
-            completion(image)
+                let image = UIImage(data: data) {
+                completion(image)
+            } else {
+                completion(UIImage(named: "serverError.png"))
+            }
         }.resume()
     }
 }

@@ -92,7 +92,11 @@ extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath)) as! PhotoViewCell
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { // clean
+            let photo = self.photos[indexPath.row]
+            if photo.isWidescreen {
+                cell.imageView.contentMode = .scaleAspectFit
+            }
             cell.imageView.image = self.photos[indexPath.row].image
         }
         return cell

@@ -11,18 +11,18 @@ struct Photo: Decodable {
     
     let link: String
     
-    var image: UIImage!
+    private enum CodingKeys: String, CodingKey {
+        case link = "img_src"
+    }
+    
+    var image: UIImage?
     
     var isWidescreen: Bool {
+        guard let image = image else { return false }
         if (image.size.width / image.size.height) > 1.4 {
             return true
         } else {
-            print("Ratio = \(image.size.width / image.size.height)")
             return false
         }
-    }
-    
-    private enum CodingKeys: String, CodingKey {
-        case link = "img_src"
     }
 }
