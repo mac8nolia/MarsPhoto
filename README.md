@@ -30,7 +30,9 @@
 
   - **Swift** - programming language.  
 
-  - **UIKit** - UI framework. 
+  - **UIKit** - UI framework.
+ 
+  - **MVC** - architecture pattern.
 
   - **URLSession** - API for downloading data from the server. 
 
