@@ -10,17 +10,17 @@
 
   
 
-  - loads random photos from the server [NASA](https://api.nasa.gov/) 
+  - Loads random photos from the server [NASA](https://api.nasa.gov/) 
 
-  - user can refresh photos 
+  - User can refresh photos 
 
-  - widescreen photos are displayed in stretched to screen's width cells 
+  - Widescreen photos are displayed in stretched to screen's width cells 
 
-  - shows the selected by user photo in detail web view 
+  - Shows the selected by user photo in detail web view 
 
-  - user can save and share the selected photo 
+  - User can save and share the selected photo 
 
-  - compatible with iOS 12 and newer 
+  - Compatible with iOS 12 and newer 
 
   
 
@@ -40,7 +40,6 @@
 
   - **WebKit** - web browser engine for displaying photos separately.  
 
-  - **AutoLayout with programmatic implementation** - to create an adaptive interface. 
 
   
 
